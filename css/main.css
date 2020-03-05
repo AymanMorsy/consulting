@@ -1,0 +1,172 @@
+/* 
+* * start genral reset  
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* 
+* * genral styling  
+*/
+
+:root{
+    --darkblugray: #4a657d;
+    --lightblue: #1f87e4;
+    --blueback: #0e151b;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* 
+* * ⭐⭐ start Header ⭐⭐
+*/
+
+
+header{
+    background-color: #4a657d;
+    color:white;
+    line-height: 2.2em;
+    font-size: 0.8rem;
+}
+header .top-bar,
+header .main-nav{
+    padding: 0 15%;
+}
+
+/* ⭐ Top bar ⭐ */
+
+header .top-bar {
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Top bar - left info */
+
+header .top-bar .left-info{
+    display:flex;
+}
+
+header .left-info .icon{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0.6em;
+}
+
+
+header .left-info li:last-child::before{
+    content:'|';
+    margin-left: 0.9em;
+    color:rgb(175, 175, 175);
+}
+
+
+
+
+/* Top bar - right info */
+
+header .top-bar .right-info{
+    display:flex;
+}
+
+.right-info .social ul{
+    display:flex;
+    
+}
+.right-info  ul li{
+    margin: 0.1em;
+    
+}
+.right-info  .social a{
+    padding: 0.5em;
+    color:white;
+    
+}
+.right-info  .support::before{
+    content: '|';
+    display:inline-block;
+    margin-left: 0.4em;
+    color:rgb(175, 175, 175);
+    
+}
+
+.right-info .support .icon{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0.6em;
+}
+.right-info .support a,
+.right-info .contact a{
+    color:white;
+    padding: 1em;;
+}
+.right-info .contact a{
+    text-transform: uppercase;
+}
+
+
+/* ⭐ Main Nav ⭐ */
+header .main-nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 1em 15%;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.67);
+    
+}
+
+.main-nav nav ul {
+    display:flex;
+}
+
+.main-nav ul a{
+    color: var(--darkblugray);
+    text-transform: uppercase;
+    padding: 1em;
+    font-weight: 700;
+
+}
+
+
+
+
+/* 
+* * 🚨🚨 End Header 🚨🚨
+*/
+
+
+
+/* 
+* * ⭐⭐ Hero Section ⭐⭐
+*/
+/* .hero{
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+} */
+
+
+
+
+/* 
+* * ⭐⭐ start About Us ⭐⭐
+*/
