@@ -22,10 +22,61 @@
     align-items: center;
   }
 
+
+  /* 
+  * Start My Cutomization
+  */
+
   .swiper-slide img{
     width: 100%;
   }
 
 
 
+.swiper-slide{
+  position: relative;
+}
+
+.slider-info{
+  position: absolute;
+}
+
+.slider-info h2{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:var(--darkblugray);
+  margin-bottom: 0.3em;
+}
+.slider-info p{
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color:var(--darkblugray);
+  margin-bottom: 1.5em;
+}
+.slider-info button{
+  font-size: 0.7rem;
+  padding: 1.2em 2.4em;
+  text-transform: uppercase;
+  color:white;
+  background-color: var(--lightblue);
+  border:none;
+
+}
+
+
+.swiper-button-prev::after{
+  background: url('../assets/slider/slider-left-icon-arrow.png') no-repeat center;
+}
+.swiper-button-next::after{
+
+  background: url('../assets/slider/slider-right-icon-arrow.png') no-repeat center;
+}
+
+.swiper-button-prev{
+  background-color: var(--lightblue);
+}
+.swiper-button-next{
+  background-color: var(--lightblue);
+}
 
