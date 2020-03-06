@@ -221,25 +221,39 @@ header .main-nav{
 * * ⭐⭐ start About Us ⭐⭐
 */
 
-
 .about{
-    margin-top: 10em;;
+    text-align: center;
+    margin: 4.5em 0;
+}
+.about > h2{
+    text-transform: uppercase;
+    color:var(--darkblugray);
+    margin-bottom: 1.5em;
+}
+
+.about .wrapper{
     display: flex;
     justify-content: space-between;
 }
+.about .wrapper > *{
+    width: 50%;
+}
+.about .left-image img{
+    width: 100%;
+}
 
-.about .left-content{
+.about .right-content{
     margin: 8em 4.5em 0; 
 
 }
 
-.about h2{
+.about .wrapper h2{
     text-transform: uppercase;
     font-size: 2.2rem;
     margin-bottom: 0.5em;
 }
 
-.about p{
+.about .wrapper p{
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;  
@@ -252,6 +266,33 @@ header .main-nav{
     color:var(--lightblue)
 }
 
+
+@media screen and (max-width:1150px){
+    .about .right-content {
+        margin: 1em 4.5em 0;
+    }
+    .about .wrapper h2 {
+        font-size: 1.5rem;
+    }
+    .about .wrapper p {
+        margin-bottom: 1em;
+    }
+}
+@media screen and (max-width:768px){
+    .about .wrapper{
+        flex-direction: column;
+    }
+    .about .wrapper > *{
+        width: 100%;
+    }
+    .about .right-content {
+        margin: 1em 0.2em 0;
+    }
+    .about .right-content  p{
+        font-size: 0.8rem;
+        padding: 0 2em;
+    }
+}
 
 
 
