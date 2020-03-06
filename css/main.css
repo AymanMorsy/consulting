@@ -289,5 +289,43 @@ header .main-nav{
     
 }
 
+/* 
+* * ⭐⭐ start Practice Area ⭐⭐
+*/
+.practice-area{
+    text-align: center;
+}
+.practice-area > h2{
+    color:var(--darkblugray);
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.practice-area > p{
+    width: 40%;
+    margin: 0 auto;
+    font-size: 0.8em;
+    margin-bottom: 2.5em;
+}
+.practice-container{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.practice-container .item{
+    margin: .5em;
+    text-align: left;
+}
+
+.practice-container .item h4{
+    text-transform: uppercase;
+    color:var(--lightblue);
+    font-size: 0.8em;
+    margin: 0.5em 0;
+}
+.practice-container .item p{
+    color:rgb(70, 70, 70);
+    font-size: 0.8rem;
+}
 
 
