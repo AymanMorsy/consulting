@@ -431,6 +431,9 @@ header .main-nav{
     margin: .5em;
     text-align: left;
 }
+.practice-container .item img{
+    width: 100%;
+}
 
 .practice-container .item h4{
     text-transform: uppercase;
@@ -443,6 +446,31 @@ header .main-nav{
     font-size: 0.8rem;
 }
 
+@media screen and (max-width:1000px){
+    .practice-container{
+        width: 98%;
+    }
+}
+@media screen and (max-width:768px){
+    .practice-container{
+        width: 99%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .practice-container .item{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    .practice-container{
+        width: 99%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .practice-container .item{
+        width: 80%;
+    }
+}
 
 /* 
 * * ⭐⭐ start choose us ⭐⭐
