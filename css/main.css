@@ -149,6 +149,9 @@ header .main-nav{
     box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.67);
     
 }
+.main-nav .hamborger{
+    display: none;
+}
 
 .main-nav nav ul {
     display:flex;
@@ -159,11 +162,52 @@ header .main-nav{
     text-transform: uppercase;
     padding: 1em;
     font-weight: 700;
+    transition: all 300ms ease-in-out;
+
+}
+
+.main-nav ul a:hover{
+    color: var(--lightblue);
+
+}
+.main-nav ul .active {
+    color: var(--lightblue);
 
 }
 
 
+@media screen and (max-width:850px){
+    header .main-nav {
+        padding: 1em 2%;
+    }
+    .main-nav .logo img{
+        width: 150px;
+    }
 
+}
+@media screen and (max-width:630px){
+    header .main-nav {
+        flex-wrap: wrap;
+    }
+    .main-nav .logo{
+        display:flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .main-nav .hamborger{
+        display: block;
+        color:black;
+        font-size: 3rem;
+    }
+
+    .main-nav nav {
+        width: 100%;
+    }
+    .main-nav nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /* 
 * * 🚨🚨 End Header 🚨🚨
