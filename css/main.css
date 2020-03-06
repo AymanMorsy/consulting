@@ -195,3 +195,99 @@ header .main-nav{
 
 
 
+/* 
+* * ⭐⭐ start consulting services ⭐⭐
+*/
+
+.consulting-services{
+    text-align: center;
+    margin: 4.5em 0;
+}
+.consulting-services > h2{
+    text-transform: uppercase;
+    color:var(--darkblugray);
+    margin-bottom: 0.5em;
+}
+.consulting-services > p{
+    color:var(--darkblugray);
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    margin-bottom: 2em;
+}
+
+.services-container{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.services-container .service-item{
+    background-color: #edeff2;
+    padding: 4em 1em;
+}
+.services-container .service-item:hover{
+    background-color: var(--lightblue);
+    transform: scale(1.1);
+    box-shadow: 0px 3px 13px -6px rgba(0,0,0,0.67);
+    transition: all 350ms ease-in-out;
+}
+
+.services-container .service-item:hover .btn{
+    background-color: white;
+    color:var(--darkblugray);
+    transition: all 250ms ease-in-out;
+}
+.services-container .service-item:hover :not(.btn){
+    color:white;
+}
+
+.services-container .service-item:nth-child(1) .logo{
+    width: 44px;
+    height: 40px;
+    background: url('../assets/icon-1.png') no-repeat;
+    margin: 0 auto;
+    transition: all 250ms ease-in-out;
+}
+.services-container .service-item:nth-child(1):hover .logo{
+    background: url('../assets/icon-1-hover.png') no-repeat;
+}
+
+
+.services-container .service-item:nth-child(2) .logo{
+    width: 67px;
+    height: 61px;
+    background: url('../assets/icon-2.png') no-repeat;
+    margin: 0 auto;
+    transition: all 250ms ease-in-out;
+}
+.services-container .service-item:nth-child(2):hover .logo{
+    background: url('../assets/icon-2-hover.png') no-repeat;
+}
+
+.services-container .service-item:nth-child(3) .logo{
+    width: 44px;
+    height: 40px;
+    background: url('../assets/icon-3.png') no-repeat;
+    margin: 0 auto;
+    transition: all 250ms ease-in-out;
+}
+.services-container .service-item:nth-child(3):hover .logo{
+    background: url('../assets/icon-3-hover.png') no-repeat;
+}
+
+.services-container .service-item h3{
+    /* font-size: 0.8em; */
+    text-transform: uppercase;
+    margin: 0.8em 0;
+    
+}
+.services-container .service-item p{
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    line-height: 1.4rem;
+    
+}
+
+
+
