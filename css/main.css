@@ -53,7 +53,7 @@ header .main-nav{
 /* ⭐ Top bar ⭐ */
 
 header .top-bar {
-    height: 50px;
+    height: 42px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -92,13 +92,17 @@ header .top-bar .right-info{
     
 }
 .right-info  ul li{
-    margin: 0.1em;
-    
+    margin: 0.1em;   
 }
 .right-info  .social a{
     padding: 0.5em;
     color:white;
     
+}
+.right-info .support a:hover,
+.right-info .contact a:hover
+{
+    background-color: var(--lightblue);
 }
 .right-info  .support::before{
     content: '|';
@@ -122,6 +126,18 @@ header .top-bar .right-info{
     text-transform: uppercase;
 }
 
+@media screen and (max-width:1124px){
+    header .top-bar,
+    header .main-nav{
+        padding: 0 2%;
+    }
+}
+@media screen and (max-width:820px){
+    header .top-bar,
+    header .main-nav{
+        display:none;
+    }
+}
 
 /* ⭐ Main Nav ⭐ */
 header .main-nav{
