@@ -361,3 +361,56 @@ header .main-nav{
     font-size: 3rem;
     font-weight: 700;
 }
+
+
+
+/* 
+* * ⭐⭐ start portfolio ⭐⭐
+*/
+
+.portfolio{
+    text-align:center;
+    margin-top:4em;
+    position: relative;
+}
+
+.portfolio > h2{
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.portfolio > p{
+    font-size: 0.8rem;
+    width: 50%;
+    margin: 1em auto 3em auto;
+
+}
+
+.portfolio  nav{
+    width: 75%;
+    height: 550px;
+    margin: 0 auto;
+    background: url('../assets/portfolio/bg1.png');
+}
+
+.portfolio  ul{
+    display:flex;
+    justify-content: center;
+    padding-top: 4.5em;
+}
+
+.portfolio li a{
+    color:white;
+    padding: 1em;
+    margin: 0.1em;
+}
+
+.portfolio .project-container{
+    position: absolute;
+    top:30%;
+}
+.portfolio .project-container li{
+   margin: 0.1em;
+}
+.portfolio .project-container img{
+    width: 100%;
+}
