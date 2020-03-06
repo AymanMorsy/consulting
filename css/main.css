@@ -308,7 +308,7 @@ header .main-nav{
 }
 .practice-container{
     display: flex;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -329,3 +329,35 @@ header .main-nav{
 }
 
 
+/* 
+* * ⭐⭐ start choose us ⭐⭐
+*/
+
+.why-us{
+    text-align: center;
+    background: url('../assets/why-us/bg.png');
+    color:white;
+    padding: 3.5em 0;
+}
+
+.why-us > h2{
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.why-us > p{
+    font-size: 0.8rem;
+    width: 50%;
+    margin: 1em auto 3em auto;
+
+}
+.counter-container{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.counter-container .counter{
+    font-size: 3rem;
+    font-weight: 700;
+}
