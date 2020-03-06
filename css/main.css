@@ -244,6 +244,7 @@ header .main-nav{
 
 .about .right-content{
     margin: 8em 4.5em 0; 
+    text-align: left;
 
 }
 
@@ -287,6 +288,7 @@ header .main-nav{
     }
     .about .right-content {
         margin: 1em 0.2em 0;
+        text-align: center;
     }
     .about .right-content  p{
         font-size: 0.8rem;
@@ -510,7 +512,7 @@ header .main-nav{
     top:30%;
 }
 .portfolio .project-container li{
-   margin: 0.1em;
+    margin: 0.1em;
 }
 .portfolio .project-container img{
     width: 100%;
