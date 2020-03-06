@@ -392,6 +392,18 @@ header .main-nav{
     
 }
 
+@media screen and (max-width:850px){
+    .services-container {
+        width: 98%;
+    }
+}
+@media screen and (max-width:600px){
+    .services-container {
+        width: 96%;
+        flex-direction: column;
+    }
+}
+
 /* 
 * * ⭐⭐ start Practice Area ⭐⭐
 */
