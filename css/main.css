@@ -155,18 +155,43 @@ header .main-nav{
 
 
 
-/* 
-* * ⭐⭐ Hero Section ⭐⭐
-*/
-/* .hero{
-    width: 100%;
-    height: 400px;
-    background-color: aqua;
-} */
-
-
 
 
 /* 
 * * ⭐⭐ start About Us ⭐⭐
 */
+
+
+.about{
+    margin-top: 10em;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .left-content{
+    margin: 8em 4.5em 0; 
+
+}
+
+.about h2{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 0.5em;
+}
+
+.about p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-bottom: 2em;
+    line-height: 1.6rem;
+}
+
+.lighter{
+    color:var(--lightblue)
+}
+
+
+
+

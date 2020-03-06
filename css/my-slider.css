@@ -54,7 +54,7 @@
   color:var(--darkblugray);
   margin-bottom: 1.5em;
 }
-.slider-info button{
+.btn{
   font-size: 0.7rem;
   padding: 1.2em 2.4em;
   text-transform: uppercase;
