@@ -89,3 +89,24 @@
   background-color: var(--lightblue);
 }
 
+
+/* Media Query */
+
+@media screen and (max-width:768px){
+  .slider-info h2{
+    font-size: 2rem;
+  }
+  .slider-info p{
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width:500px){
+  .slider-info h2{
+    font-size: 1.2rem;
+  }
+  .slider-info p{
+    font-size: 0.6rem;
+    padding: 0 2em;
+  }
+}
+
