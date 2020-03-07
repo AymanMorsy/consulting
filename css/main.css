@@ -398,6 +398,9 @@ header .main-nav{
     }
 }
 @media screen and (max-width:600px){
+    .consulting-services > p{
+        width: 90%;
+    }
     .services-container {
         width: 96%;
         flex-direction: column;
@@ -452,6 +455,9 @@ header .main-nav{
     }
 }
 @media screen and (max-width:768px){
+    .practice-area > p{
+        width: 90%;
+    }
     .practice-container{
         width: 99%;
         flex-wrap: wrap;
@@ -473,7 +479,7 @@ header .main-nav{
 }
 
 /* 
-* * ⭐⭐ start choose us ⭐⭐
+* * ⭐⭐ start why us ⭐⭐
 */
 
 .why-us{
@@ -505,7 +511,24 @@ header .main-nav{
     font-weight: 700;
 }
 
-
+@media screen and (max-width:800px){
+    .why-us > p{
+        width: 90%;
+    }
+    .counter-container{
+        flex-wrap: wrap;
+    }
+    .counter-item{
+        width: 40%;
+        margin: 1em;
+    }
+    .counter-container .counter{
+        font-size: 2.2rem;
+    }
+    .counter-container .info{
+        font-size: 0.8rem;
+    }
+}
 
 /* 
 * * ⭐⭐ start portfolio ⭐⭐
