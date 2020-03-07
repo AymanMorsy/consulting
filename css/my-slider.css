@@ -47,6 +47,7 @@
   text-transform: uppercase;
   color:var(--darkblugray);
   margin-bottom: 0.3em;
+  padding: 0.2em;
 }
 .slider-info p{
   font-size: 0.8rem;

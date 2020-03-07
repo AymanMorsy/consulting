@@ -588,6 +588,9 @@ header .main-nav{
 }
 
 @media screen and (max-width:850px){
+    .portfolio {
+        margin-bottom: 10em;
+    }
     .portfolio > p{
         width: 90%;
     }
@@ -606,6 +609,13 @@ header .main-nav{
     }
 }
 @media screen and (max-width:600px){
+    .portfolio {
+        margin-bottom: 0em;
+    }
+    .portfolio .project-container{
+        position: relative;
+        top: -500px;
+    }
     .portfolio .item{
         width: 90%;
     }
@@ -614,6 +624,94 @@ header .main-nav{
 @media screen and (max-width:400px){
     .portfolio li a{
         font-size: 0.65rem;
+    }
+
+}
+
+/* 
+* * ⭐⭐ start Team ⭐⭐
+*/
+
+.team{
+    text-align:center;
+    margin-top:4em;
+    position: relative;
+}
+
+.team > h2{
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.team > p{
+    font-size: 0.8rem;
+    width: 50%;
+    margin: 1em auto 3em auto;
+
+}
+
+.team-container{
+    display:flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.team-container li{
+    text-align: left;
+}
+
+.team-container h6{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.team-container p{
+    font-size: 0.8rem;
+}
+.team-container .title{
+    color:var(--lightblue);
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+.team-container .phone{
+    margin-top: 0.5em;
+}
+
+@media screen and (max-width:1100px){
+    .team-container{
+        width: 100%;
+
+    }
+    .team-container img{
+        width: 100%;
+
+    }
+}
+@media screen and (max-width:768px){
+    .team > p{
+        width: 90%;
+    }
+    .team-container{
+        flex-wrap: wrap;
+
+    }
+    .team-container li{
+        width: 45%;
+
+    }
+
+}
+@media screen and (max-width:600px){
+    .team{
+        margin-top: -450px;
+    }
+    .team-container{
+       flex-direction: column;
+
+    }
+    .team-container li{
+        width: 100%;
+        text-align: center;
+
     }
 
 }
