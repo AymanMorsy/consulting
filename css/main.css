@@ -595,7 +595,6 @@ header .main-nav{
         width: 100%;
     }
     .portfolio li a{
-        font-size: 0.65rem;
         padding: 0.8em;
     }
     .portfolio .project-container{
@@ -609,6 +608,12 @@ header .main-nav{
 @media screen and (max-width:600px){
     .portfolio .item{
         width: 90%;
+    }
+
+}
+@media screen and (max-width:400px){
+    .portfolio li a{
+        font-size: 0.65rem;
     }
 
 }
