@@ -796,7 +796,6 @@ footer{
 footer .container{
     display: flex;
     width: 75%;
-    /* justify-content: center; */
     margin: 0 auto;
 }
 footer .container > *{
@@ -805,11 +804,52 @@ footer .container > *{
 footer .contact{
     width: 35%;
 }
+
+footer .logo p{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 0.8em;
+}
+footer .social p{
+    margin: 1.5em 0;
+    font-size: 0.6em 0.8em;
+}
+footer .follow-icons  svg{
+    color:var(--lightblue)
+}
+footer form input{
+    border:none;
+    padding: 0.531em;
+    margin-right: -0.5em;
+}
+footer form .btn{
+    border:none;
+    padding: 0.5em;
+    font-size: 0.7rem;
+    padding: 0.77em 2.2em;
+    border-radius: 0px;
+}
+footer form .btn:hover{
+    border:none
+}
+
+/* blog */
+
 footer .blog{
     width: 32.5%;
 }
+footer h6{
+    margin-bottom: 3em;
+}
+footer article{
+    margin: 1em 0;
+}
+footer .blog .info{
+    padding: 1em 0;
+}
 footer .blog article img{
     float:left;
+    margin-right: 0.5em;
 }
 footer .blog article p{
     font-size: 0.7rem;
@@ -818,10 +858,65 @@ footer .blog article p{
 footer .blog .date {
     color:var(--lightblue);
 }
+footer article::after{
+    content:'';
+    display: table;
+    clear: both;
+}
 
 
 
 
 footer .instgram{
-    width: 32.5%;
+    width: 30%;
+}
+footer .instgram .pcs{
+    width: 300px;
+}
+footer .pcs img{
+    display: inline-block;
+    margin: -2px;
+}
+footer .instgram a{
+    font-size: 0.75rem;
+    margin: 2em 0;
+    cursor: pointer;
+}
+
+footer > hr{
+    width: 75%;
+    margin: 1em auto;
+    color:rgb(172, 172, 172);
+}
+
+footer .copyright{
+    padding: 1em 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width:1100px){
+    footer .container{
+        width: 100%;
+        padding: 0 0.5em; 
+    }
+}
+@media screen and (max-width:930px){
+    footer .container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
+@media screen and (max-width:760px){
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .container > *{
+        width: 300px;
+    }
+
+
 }
