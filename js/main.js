@@ -26,13 +26,16 @@ const options = {
   threshold: 0.3,
   rootMargin: "-130px"
 };
+let observerStatus = true;
 const observer = new IntersectionObserver(function (entries, observer) {
-  if (!entries[0].isIntersecting) {
+  if (observerStatus && entries[0].isIntersecting) {
+    console.log('observerStatus && entries[0].isIntersecting: ', observerStatus , entries[0].isIntersecting);
+    observerStatus = false;
     counters.forEach(ele =>{
       let num = 0
       let counterID = setInterval(()=>{
         ele.innerText = num++
-        if(num == ele.dataset.num){
+        if(num === Number(ele.dataset.num)){
           clearInterval(counterID)
         }
       },1)
