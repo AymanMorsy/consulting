@@ -41,23 +41,36 @@ var swiper = new Swiper('.swiper-container', {
   on:{
     slideNextTransitionEnd:function(){
       const next = document.querySelector('.next')
-      // correct path locally is e.g (../assets/slider/slider-right-icon-arrow.png)
-      next.style.background=`url(${previwPath[this.realIndex+1]||'./assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      const prev = document.querySelector('.prev')
+      var defualtImg = './assets/slider/slider-right-icon-arrow.png'
+      
+      next.style.background=`url(${previwPath[this.realIndex+1]||defualtImg}) no-repeat center var(--lightblue)`
+
       next.addEventListener('mouseenter',()=>{
-        next.style.background=`url(${previwPath[this.realIndex+1]||'./assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
+        next.style.background=`url(${previwPath[this.realIndex+1]||defualtImg}) no-repeat center var(--lightblue)`
       })
+
       next.addEventListener('mouseout',()=>{
-        next.style.background=`url('./assets/slider/slider-right-icon-arrow.png') no-repeat center var(--lightblue)`
+        next.style.background=`url(${defualtImg}) no-repeat center var(--lightblue)`
       })
+
+            // set prev with next for initial start 
+            prev.addEventListener('mouseenter',()=>{
+              prev.style.background=`url(${previwPath[this.realIndex-1]||'./assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
+            })
+            prev.addEventListener('mouseout',()=>{
+              prev.style.background=`url(./assets/slider/slider-left-icon-arrow.png) no-repeat center var(--lightblue)`
+            })
     },
     slidePrevTransitionEnd:function(){
-      const next = document.querySelector('.prev')
-      next.style.background=`url(${previwPath[this.realIndex-1]||'./assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
-      next.addEventListener('mouseenter',()=>{
-        next.style.background=`url(${previwPath[this.realIndex-1]||'./assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      const prev = document.querySelector('.prev')
+      var defualtImg = './assets/slider/slider-left-icon-arrow.png'
+      prev.style.background=`url(${previwPath[this.realIndex-1]||defualtImg}) no-repeat center var(--lightblue)`
+      prev.addEventListener('mouseenter',()=>{
+        prev.style.background=`url(${previwPath[this.realIndex-1]||defualtImg}) no-repeat center var(--lightblue)`
       })
-      next.addEventListener('mouseout',()=>{
-        next.style.background=`url('./assets/slider/slider-left-icon-arrow.png') no-repeat center var(--lightblue)`
+      prev.addEventListener('mouseout',()=>{
+        prev.style.background=`url(${defualtImg}) no-repeat center var(--lightblue)`
       })
     }
   }

@@ -116,7 +116,7 @@
 /* prev */
 .prev:hover{
   width: 170px;
-  background: url('') no-repeat center var(--lightblue);
+  /* background: url('../assets/slider/min-prev1.jpg') no-repeat center var(--lightblue); */
 }
 .prev:hover::after{
   content: 'Prev Slide ';
