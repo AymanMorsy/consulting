@@ -580,6 +580,7 @@ header .main-nav{
     display:flex;
     justify-content: center;
     padding-top: 4.5em;
+    min-height: 450px;
 }
 
 .portfolio li a{
@@ -607,7 +608,7 @@ header .main-nav{
 
 @media screen and (max-width:850px){
     .portfolio {
-        margin-bottom: 10em;
+        margin-bottom: 12em;
     }
     .portfolio > p{
         width: 90%;
@@ -624,6 +625,11 @@ header .main-nav{
     }
     .portfolio .item{
         width: 40%;
+    }
+}
+@media screen and (max-width:630px){
+    .portfolio {
+        margin-bottom: 0em;
     }
 }
 @media screen and (max-width:600px){
