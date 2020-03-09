@@ -15,11 +15,18 @@ function sw(){
 }
 
 
+// working Locally //
+// var previwPath =[
+//   '../assets/slider/min-prev0.jpg',
+//   '../assets/slider/min-prev1.jpg',
+//   '../assets/slider/min-prev2.jpg'
+// ]
 
+// working on github puplish //
 var previwPath =[
-  '../assets/slider/min-prev0.jpg',
-  '../assets/slider/min-prev1.jpg',
-  '../assets/slider/min-prev2.jpg'
+  './consulting/assets/slider/min-prev0.jpg',
+  './consulting/assets/slider/min-prev1.jpg',
+  './consulting/assets/slider/min-prev2.jpg'
 ]
 
 var swiper = new Swiper('.swiper-container', {
