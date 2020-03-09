@@ -24,9 +24,9 @@ function sw(){
 
 // working on github puplish //
 var previwPath =[
-  './consulting/assets/slider/min-prev0.jpg',
-  './consulting/assets/slider/min-prev1.jpg',
-  './consulting/assets/slider/min-prev2.jpg'
+  './assets/slider/min-prev0.jpg',
+  './assets/slider/min-prev1.jpg',
+  './assets/slider/min-prev2.jpg'
 ]
 
 var swiper = new Swiper('.swiper-container', {
