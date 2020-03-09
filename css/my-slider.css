@@ -75,19 +75,56 @@
 }
 
 
-.swiper-button-prev::after{
+.prev::after{
   background: url('../assets/slider/slider-left-icon-arrow.png') no-repeat center;
 }
-.swiper-button-next::after{
+.next::after{
 
   background: url('../assets/slider/slider-right-icon-arrow.png') no-repeat center;
 }
 
-.swiper-button-prev{
-  background-color: var(--lightblue);
+.next,.prev{
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  top: 50%;
+  transition: all 300ms ease-in-out;
 }
-.swiper-button-next{
-  background-color: var(--lightblue);
+.prev{
+  background:  url('../assets/slider/slider-left-icon-arrow.png') no-repeat center var(--lightblue);
+}
+
+.next{
+  right: 0;
+  background: url('../assets/slider/slider-right-icon-arrow.png') no-repeat center var(--lightblue);
+}
+
+/* next */
+.next:hover{
+  width: 170px;
+  background: url('../assets/slider/min-prev1.jpg') no-repeat center var(--lightblue);
+}
+.next:hover::after{
+    content: 'Next Slide ';
+    padding: 20px 10px;
+    display: block;
+    font-size: 0.8rem;
+
+}
+/* prev */
+.prev:hover{
+  width: 170px;
+  background: url('') no-repeat center var(--lightblue);
+}
+.prev:hover::after{
+  content: 'Prev Slide ';
+  padding: 20px 10px;
+  display: block;
+  font-size: 0.8rem;
+  text-align: right;
+
 }
 
 

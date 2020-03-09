@@ -1,12 +1,58 @@
 
 
 // Swiper Slider init //
+function sw(){
+  var i = 0
+  console.log(i+1);
+  const next = document.querySelector('.next')
+  next.style.background=`url('../assets/slider/slider-next-bg2.jpg') no-repeat center var(--lightblue)`
+  next.addEventListener('mouseenter',()=>{
+    next.style.background=`url('../assets/slider/slider-next-bg2.jpg') no-repeat center var(--lightblue)`
+  })
+  next.addEventListener('mouseout',()=>{
+    next.style.background=`url('../assets/slider/slider-right-icon-arrow.png') no-repeat center var(--lightblue)`
+  })
+}
+
+
+
+var previwPath =[
+  '../assets/slider/min-prev0.jpg',
+  '../assets/slider/min-prev1.jpg',
+  '../assets/slider/min-prev2.jpg'
+]
 
 var swiper = new Swiper('.swiper-container', {
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.next',
+    prevEl: '.prev',
   },
+  init:function(){
+
+    console.log(2020);
+  },
+  on:{
+    slideNextTransitionEnd:function(){
+      const next = document.querySelector('.next')
+      next.style.background=`url(${previwPath[this.realIndex+1]||'../assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      next.addEventListener('mouseenter',()=>{
+        next.style.background=`url(${previwPath[this.realIndex+1]||'../assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      })
+      next.addEventListener('mouseout',()=>{
+        next.style.background=`url('../assets/slider/slider-right-icon-arrow.png') no-repeat center var(--lightblue)`
+      })
+    },
+    slidePrevTransitionEnd:function(){
+      const next = document.querySelector('.prev')
+      next.style.background=`url(${previwPath[this.realIndex-1]||'../assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      next.addEventListener('mouseenter',()=>{
+        next.style.background=`url(${previwPath[this.realIndex-1]||'../assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      })
+      next.addEventListener('mouseout',()=>{
+        next.style.background=`url('../assets/slider/slider-left-icon-arrow.png') no-repeat center var(--lightblue)`
+      })
+    }
+  }
 });
 
 //  nav menu toggle //
