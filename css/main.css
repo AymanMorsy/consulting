@@ -628,11 +628,12 @@ header .main-nav{
 }
 @media screen and (max-width:600px){
     .portfolio {
-        margin-bottom: 0em;
+        margin-bottom: 2em;
     }
     .portfolio .project-container{
         position: relative;
-        top: -500px;
+        top: -440px;
+        padding-top: 2em;
     }
     .portfolio .item{
         width: 90%;
@@ -720,7 +721,7 @@ header .main-nav{
 }
 @media screen and (max-width:600px){
     .team{
-        margin-top: -450px;
+        margin-top: -400px;
     }
     .team-container{
        flex-direction: column;
