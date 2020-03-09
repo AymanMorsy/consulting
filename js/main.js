@@ -41,22 +41,23 @@ var swiper = new Swiper('.swiper-container', {
   on:{
     slideNextTransitionEnd:function(){
       const next = document.querySelector('.next')
-      next.style.background=`url(${previwPath[this.realIndex+1]||'../assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      // correct path locally is e.g (../assets/slider/slider-right-icon-arrow.png)
+      next.style.background=`url(${previwPath[this.realIndex+1]||'./assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
       next.addEventListener('mouseenter',()=>{
-        next.style.background=`url(${previwPath[this.realIndex+1]||'../assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
+        next.style.background=`url(${previwPath[this.realIndex+1]||'./assets/slider/slider-right-icon-arrow.png'}) no-repeat center var(--lightblue)`
       })
       next.addEventListener('mouseout',()=>{
-        next.style.background=`url('../assets/slider/slider-right-icon-arrow.png') no-repeat center var(--lightblue)`
+        next.style.background=`url('./assets/slider/slider-right-icon-arrow.png') no-repeat center var(--lightblue)`
       })
     },
     slidePrevTransitionEnd:function(){
       const next = document.querySelector('.prev')
-      next.style.background=`url(${previwPath[this.realIndex-1]||'../assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
+      next.style.background=`url(${previwPath[this.realIndex-1]||'./assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
       next.addEventListener('mouseenter',()=>{
-        next.style.background=`url(${previwPath[this.realIndex-1]||'../assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
+        next.style.background=`url(${previwPath[this.realIndex-1]||'./assets/slider/slider-left-icon-arrow.png'}) no-repeat center var(--lightblue)`
       })
       next.addEventListener('mouseout',()=>{
-        next.style.background=`url('../assets/slider/slider-left-icon-arrow.png') no-repeat center var(--lightblue)`
+        next.style.background=`url('./assets/slider/slider-left-icon-arrow.png') no-repeat center var(--lightblue)`
       })
     }
   }
