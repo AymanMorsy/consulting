@@ -112,3 +112,19 @@ const observer = new IntersectionObserver(function (entries, observer) {
 
 observer.observe(whyChooseUs)
 
+
+// PorTfolio Filter
+
+const portfolioNav = document.querySelector('.portfolio nav')
+const items = document.querySelectorAll('.project-container li')
+portfolioNav.addEventListener('click',(e)=>{
+  e.preventDefault
+  items.forEach(ele =>{
+    if(ele.classList.contains(e.target.dataset.get)){
+      ele.style.display='inline'
+    }else{
+      ele.style.display='none'
+    }
+    
+  })
+})

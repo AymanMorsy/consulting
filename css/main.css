@@ -595,7 +595,8 @@ header .main-nav{
 
 .portfolio .project-container{
     position: absolute;
-    top:30%;
+    top: 34%;
+    width: 100%;
 }
 .portfolio .project-container li{
     margin: 0.1em;
