@@ -117,11 +117,20 @@ observer.observe(whyChooseUs)
 
 const portfolioNav = document.querySelector('.portfolio nav')
 const items = document.querySelectorAll('.project-container li')
+const activeNav = document.querySelectorAll('nav li a')
+
+
+
 portfolioNav.addEventListener('click',(e)=>{
   e.preventDefault
   items.forEach(ele =>{
     if(ele.classList.contains(e.target.dataset.get)){
       ele.style.display='inline'
+      // make button active
+      activeNav.forEach(btn =>{
+        btn.classList.remove('active')
+        e.target.classList.add('active')
+      })
     }else{
       ele.style.display='none'
     }
